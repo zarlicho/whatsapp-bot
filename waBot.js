@@ -4,11 +4,10 @@ const { Client, LegacySessionAuth, LocalAuth } = require('whatsapp-web.js');
 
 const client = new Client({
      authStrategy: new LocalAuth({
-          clientId: "client-one" //Un identificador(Sugiero que no lo modifiques)
+          clientId: "client-one"
      })
 })
 
-// Save session values to the file upon successful auth
 client.on('authenticated', (session) => {
     console.log(session);
 });
