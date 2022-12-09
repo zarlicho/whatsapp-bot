@@ -27,7 +27,7 @@ lineReader.on('line', function (line) {
     client.on('ready', ()=> {  
         console.log('ready to send message');
         const chatId = line.substring(1) + "@c.us"; 
-        client.sendMessage(chatId, "bro kalo menurut lu gw deketin gk ya? apa gw jauhin?");
+        client.sendMessage(chatId, "this message created by bot!");
         console.log('send message to: ', line);
 
     });
